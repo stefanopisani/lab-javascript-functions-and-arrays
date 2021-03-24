@@ -132,14 +132,14 @@ const wordFind = [];
 function doesWordExist(arr, word) {
 
   if (arr.length === 0) {
-    console.log(null);
+    // console.log(null);
     return null;
 
   }
 
   for (let i in arr) {
-    if (word[i] in arr === true) {
-      console.log(true)
+    if (arr[i].includes(word[i])) {
+      console.log(true);
       return true;
     } else {
       return false;
@@ -147,7 +147,7 @@ function doesWordExist(arr, word) {
   }
 }
 
-doesWordExist(wordFind);
+doesWordExist(wordsFind, 'machine');
 
 
 
