@@ -72,9 +72,6 @@ const wordsArr = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smar
 //   return sum;
 // }
 
-
-
-
 function averageWordLength(arr) {
   if (arr.length === 0) {
     return null;
@@ -128,7 +125,31 @@ console.log(uniquifyArray(wordsUnique))
 
 
 // Iteration #6: Find elements
+
 const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
+const wordFind = [];
+
+function doesWordExist(arr, word) {
+
+  if (arr.length === 0) {
+    console.log(null);
+    return null;
+
+  }
+
+  for (let i in arr) {
+    if (word[i] in arr === true) {
+      console.log(true)
+      return true;
+    } else {
+      return false;
+    }
+  }
+}
+
+doesWordExist(wordFind);
+
+
 
 // Iteration #7: Count repetition
 const wordsCount = [
